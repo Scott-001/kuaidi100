@@ -1,0 +1,21 @@
+#获取订单详情
+-
+    casename: 获取订单详情
+    method: post
+    url: /open/test/express.do?
+    request:
+        headers:
+            control: no-cache
+            Content-Type: application/x-www-form-urlencoded
+        data:
+            reqparams:
+                expid: $expid
+            courierid: $courierid
+            token: $token
+            versionCode: '5091'
+        params:
+            method: findbyid
+    validity:
+        status: '200'
+        massage: '成功'
+

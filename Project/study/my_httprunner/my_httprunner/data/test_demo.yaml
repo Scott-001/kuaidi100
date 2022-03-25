@@ -1,0 +1,69 @@
+test_case:
+  - case_name: '测试GET请求发送成功'
+    interface_name: 'GET请求的测试路由'
+    request:
+      url: 'http://httpbin.org/get'
+      method: 'GET'
+      params:
+        k1: v1
+        k2: v2
+    extract:
+      k2: json.args.k2
+
+#      data: ''
+#      headers: ''
+#      cookies: ''
+#      files: ''
+#      json: ''
+
+
+  - case_name: '测试POST请求发送成功'
+    interface_name: 'POST请求的测试路由'
+    request:
+      url: 'http://httpbin.org/post'
+      method: 'POST'
+      data:
+        k1: v1
+        k2: v2
+      params: '' 切换上下位置的快捷键 alt+shitf+ 箭头上或者下
+      json:
+      headers: ''
+      cookies: ''
+      files: ''
+
+
+# yaml的好处在于，结构化的语言，支持序列化和反序列化
+
+
+
+
+
+
+
+
+
+
+#  [
+#    {
+#      case_name: 请输入测试用例名,
+#      interface_name: '请输入你的接口名字'
+#      request:{
+#                method: '',
+#                params: '',
+#                data: '',
+#                headers: '',
+#                cookies: '',
+#                files: '',
+#      }
+#
+#
+#    }
+#    case2
+#    case
+#
+#  ]
+#
+#  def request(self, method, url,
+#  params=None, data=None, headers=None, cookies=None, files=None,
+#  auth=None, timeout=None, allow_redirects=True, proxies=None,
+#  hooks=None, stream=None, verify=None, cert=None, json=None):

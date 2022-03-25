@@ -1,0 +1,27 @@
+ -
+  casename: 登录接口
+  method: post
+  url: /open/test/login.do?
+  request:
+    headers:
+      control: no-cache
+      Content-Type: application/x-www-form-urlencoded
+    data:
+      reqparams:
+         loginType: PWD
+         mobile: '19902902144'
+         password: g123456
+         sign: 2FEC47B9FEDACEF87CC9507A63B6EF40
+         longitude: 113.85847142180818
+         latitude: 22.578494101010385
+         addr: 广东省深圳市宝安区新湖路523号靠近宝安天虹购物中心
+    params:
+      method: unifiedLogin
+      versionCode: '5084'
+  validity:
+    status: '200'
+    massage: '成功'
+
+
+
+

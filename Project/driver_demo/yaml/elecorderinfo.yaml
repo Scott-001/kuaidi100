@@ -1,0 +1,28 @@
+#获取订单详情
+-
+    casename: 获取订单号
+    method: get
+    url: /open/test/mktcourier.do?
+    request:
+        headers:
+            control: no-cache
+            Content-Type: application/x-www-form-urlencoded
+        data:
+        params:
+            method: elecorderinfo
+            courierid: $courierid
+            encrypt: true
+            id: $expid
+            token: $token
+            versionCode: '5091'
+            servicetype: $servicetype
+            kuaidicom: $kuaidicom
+    validity:
+        status: '200'
+        massage: '成功'
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+-
+    casename: 批量下单接口
+    method: post
+    url: /open/test/express.do?
+    request:
+        headers:
+            Content-Type: application/x-www-form-urlencoded
+            Cookie: _adadqeqwe1321312dasddocHref=; _adadqeqwe1321312dasddocReferrer=; _adadqeqwe1321312dasddocTitle=kuaidi100
+        data:
+           reqparams:
+                batchCount: 1
+                cardtype:
+                cargo: 生活用品
+                com: youzhengguonei
+                department:
+                gotaddr:
+                optor: $optor
+                payaccount:
+                payment: SHIPPER
+                platform: KDYAPP
+                recAddr: 保利香槟国际43栋1002
+                recCompany:
+                recMobile: '18221857251'
+                recName: 郭家华
+                reccountry:
+                recxzq: 福建,福州市,晋安区
+                sendAddr: 粤海街道沙河西路1871号
+                sendCompany:
+                sendMobile: '13012342158'
+                sendName: 张明
+                sendxzq: 广东,深圳市,南山区
+                sentunit: PERSONAL
+                servicetype: 快递包裹
+#               - batchCount: 1
+#                 cardtype:
+#                 cargo: 生活用品
+#                 com: youzhengguonei
+#                 department:
+#                 gotaddr:
+#                 optor: $optor
+#                 payaccount:
+#                 payment: SHIPPER
+#                 platform: KDYAPP
+#                 recAddr: 保利香槟国际43栋1002
+#                 recCompany:
+#                 recMobile: '18221857251'
+#                 recName: Scott
+#                 reccountry:
+#                 recxzq: 福建,福州市,晋安区
+#                 sendAddr: 粤海街道沙河西路1871号
+#                 sendCompany:
+#                 sendMobile: '13012342158'
+#                 sendName: 张明
+#                 sendxzq: 广东,深圳市,南山区
+#                 sentunit: PERSONAL
+#                 servicetype: 快递包裹
+        params:
+            method: addnew
+            versionCode: '5806'
+            token: $token
+    validity:
+        status: '200'
+        massage: '成功'
